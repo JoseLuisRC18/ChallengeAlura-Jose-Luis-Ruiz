@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-primario: #F9AA33;
+    --color-secundario:  #4A6572;
+    --color-terciario: #D8DFE8;
+    --color-cuarto: black;
+
+    --fuente-monserrat:'Montserrat', sans-serif;
+    --fuente-inter:'Inter', sans-serif;
+
+
+}
+* {
+    padding: 0;
+    margin:0;
+
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.logo{
+    width: 8%;
+    padding: 0.8rem;
+    margin-left: 0.6rem;
+}
+
+.completo{
+    display: flex;
+    margin-left: 6rem;
+    gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.pie_depagina{
+        background-color: var(--color-secundario);
+        padding: 1.25rem;
+        color: var(--color-primario);
+        font-style: unset;
+        text-align: center;
+        font-family: var(--fuente-inter);
+        font-size: 1rem;
+        font-weight: 100%;
+        width: 100%;
+        bottom: 0;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cuadro_texto{
+    border: none;
+    background-color:transparent;
+    color: var(--color-secundario);
+    margin-top: 30px;
+    text-transform: lowercase;
+    font-family: "Inter", sans-serif;
+   
+
+}
+::placeholder{color: var(--color-secundario);}
+    .cuadro_texto:focus{
+        outline: none;
+
+    }
+.lado_izquierdo_botones{
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+
+}
+.notita{
+    font-weight: lighter;
+    font-size: 17px;
+    text-decoration: none;
+    font-style: italic;
+    color: gray;
+    font-family:var(--fuente-inter);
+}
+.lado_izquierdo_botones_encriptar{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: var(--color-secundario);
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+}
+.lado_izquierdo_botones_desencriptar{
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border: var(--color-secundario);
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+
+
+}
+
+.salida_resultado{
+    border: none;
+    position: relative;
+    color: var(--color-secundario);
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 500px;
+    margin-top: -10%;
+    border-radius: 10px;
+    margin-left: 98px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    text-align: justify;
+    
+
+}
+::placeholder{color: var(--color-secundario);}
+    .salida_resultado:focus{
+        outline: none;
+    }
+.textos_advertencia{
+    display: flex;
+    position: absolute ;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    top: 60%;
+    box-sizing: border-box;
+    margin-left: 115px;
+
+
+    
+}
+.primer_advertencia{
+    color: var(--color-cuarto) ;
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+}
+.segunda_advertencia{
+    color: black;
+    font-size: 15px;
+    font-family: var(--fuente-inter);
+}
+
+.copiar{
+    position: absolute;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: var(--color-secundario);
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+
+}
+.lado_derecho_botones{
+    display: flex;
+    gap: 30px;
+    margin-top: 18px;
+    margin-left: 110px;
+}
+
+@media (max-width: 57.5em){
+.lado_izquierdo_botones{
+    width: 80%;
+    left: 10%;
+    top: 70%;
+}
+.completo{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+.cuadro_texto{
+    margin-top: 15px;
+    margin-bottom: -50px;
+
+}
+.lado_izquierdo_botones{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3%;
+}
+.lado_derecho{
+    position: relative;
+    width: 300px; /* Ancho del textarea */
+    height: 150px;
+}
+.salida_resultado{
+    margin-left: -30px;
+    background-image: none;
+    height: 200px;
+    border-radius: 30px;
+
+}
+.textos_advertencia{
+    position: absolute;
+    margin-left: -22px;
+    margin-right: 20px;
+    
+    position: absolute;
+    top: 0; /* Ajusta la posición vertical */
+    left: 0; /* Ajusta la posición horizontal */
+    z-index: 1; /
+
+}
+.primer_advertencia{
+
+    font-size: 13px;
+
+}
+.segunda_advertencia{
+    font-size: 19px;
+
+}
+.lado_derecho_botones{
+    margin-left: -3%;
+}
+
+.pie_depagina{
+  width: 100%;
+
+}
+
+
+}

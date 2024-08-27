@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.png" alt="logo alura" class="logo">
+    </header>
+    <main class="completo">
+        <section>
+            <div class="lado_izquierdo">
+                <div class="lado_izquierdo_informacion">
+
+                    <div class="lado_izquierdo_ingresotexto">
+                        <h1>Encriptador</h1>
+                        <textarea class="cuadro_texto" rows="20" cols="100" placeholder="Ingresa el texto aqui" ></textarea>
+                        <div class="notita">
+                            <h6>Solo letras minúsculas y sin acentos</h6>
+                        </div>
+                    </div>
+                    <div class="lado_izquierdo_botones">
+                        <button onclick="BotonEncriptarTexto();" class="lado_izquierdo_botones_encriptar ">Encriptar</button>
+                        <button onclick="BotonDesencriptarTexto();"class="lado_izquierdo_botones_desencriptar">Desencriptar</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section> 
+            <div class="lado_derecho">
+                    <textarea class="salida_resultado" rows="25" cols="28" > </textarea>
+                    <div class="textos_advertencia">
+                        <h6 class="primer_advertencia">Ingresa el texto que desees encriptar o desencriptar.</h6>
+                        <h5 class="segunda_advertencia">Ningún mensaje fue encontrado</h5>
+                    </div>
+                    
+                </div>
+
+
+                <div class="lado_derecho_botones">
+                    <button class="copiar">Copiar texto</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+   
+    <footer class="pie_depagina">
+        <p>Desarrollado por José Luis Ruiz</p>
+        <div class="icons"> 
+            <a href="https://www.linkedin.com/in/jos%C3%A9-luis-ruiz-09a552206/"> <img src="./assets/linkedin.png"> </a>
+
+            <a href="https://github.com/JoseLuisRC18"> <img src="./assets/github.png" > </a>
+            
+        </div>
+        
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
